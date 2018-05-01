@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="img/intro.jpg" data-transition="slide-in fade-out">
+				<h2>Console.hey("Hello!")</h2>
+				<h5 class="fragment">Akinde Oluwafemi E.</h5>
+				<h5 class="fragment">Software Developer</h5>
+				<h5 class="fragment"> (Web, Mobile, Ethereum Blockchain)</h5>
+			</section>
+			<section data-background-image="img/think2.jpg" slide-in fade-out>
+				<h2>THINKING JAVASCRIPT</h2>
+			</section>
+			<section>
+				<section>
+					<p>Initially, JavaScript is a Programming Language for the Web...</p>
+				</section>
+				<section>
+					<p class="">...but now, it can arguably do ALL and EVERYTHING you can think of right now..</p>
+				</section>
+			</section>
+			<section>
+				<p>To understand a programming language, you must be able to think in that language</p>
+				<p class="fragment">That simply comes with practice and real-world usage</p>
+			</section>
+			<section>
+				<section>
+					<h3>Stuffs JavaScript Can Do</h3>
+				</section>
+				<section>
+					<h3>1. Websites and Web Apps</h3>
+					<iframe width="800" height="500" data-src="http://clapng.com"></iframe>
+				</section>
+				<section>
+					<p class="fragement">Some JavaScript frameworks for developing web apps</p>
+					<ul>
+						<li>
+							<a href="https://reactjs.org">ReactJs</a>
+						</li>
+						<li>
+							<a href="https://preactjs.com">PreactJs</a>
+						</li>
+						<li>
+							<a href="http://angularjs.org">AngularJs</a>
+						</li>
+						<li>
+							<a href="http://emberjs.com">EmberJs</a>
+						</li>
+						<li>
+							<a href="http://backbonejs.org">BackboneJs</a>
+						</li>
+						<li>
+							<a href="http://vuejs.org">Vue.js</a>
+						</li>
+						<li>
+							<a href="http://meteor.com">Meteor.js</a>
+						</li>
+						<li>
+							<a href="http://knockoutjs.com">KnockoutJs</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>2. Server Applications</h3>
+					<pre><code class="data-trim">
+	const http = require('http');
+
+	const hostname = '127.0.0.1';
+	const port = 3000;
+
+	const server = http.createServer((req, res) => {
+	res.statusCode = 200;
+	res.setHeader('Content-Type', 'text/plain');
+	res.end('Hello World\n');
+	});
+
+	server.listen(port, hostname, () => {
+	console.log(`Server running at http://${hostname}:${port}/`);
+	});
+							</code>
+						</pre>
+				</section>
+				<section>
+					<h3>3. Desktop Apps</h3>
+					<ul>
+						<li>
+							<a href="http://electronjs.org">Electron</a>
+						</li>
+						<li>
+							<a href="http://http://code.kik.com/app/3/index.html">App.js</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>4. Mobile Apps</h3>
+					<ul>
+						<li>
+							<a href="http://cordova.apache.org">Apache Cordova</a>
+						</li>
+						<li>
+							<a href="http://phonegap.com">Adobe PhoneGap</a>
+						</li>
+						<li>
+							<a href="http://ionicframework">Ionic</a>
+						</li>
+						<li>
+							<a href="http://https://facebook.github.io/react-native/docs/getting-started.html">React Native</a>
+						</li>
+						<li>
+							<a href="http://http://www.idangero.us/framework7/">Framework7</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>5. Machine Learning</h3>
+					<ul>
+						<li>
+							<a href="http://js.tensflow">TensorFlow.js</a>
+						</li>
+						<li>
+							<a href="http://deeplearn.js">Deeplearn.js</a>
+						</li>
+						<li>
+							<a href="http://brain.js">Brain.js</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>6. Decentralized Application</h3>
+					<ul>
+						<li>
+							<a href="http://ethereum.com">Ethereum</a>
+						</li>
+					</ul>
+				</section>
+				<!-- <section>
+						<h3>7. Robotics </h3>
+						<ul>
+							<li><a href="http://nodebots.io">Nodebots.io</a></li>
+							<li><a href="http://cylonjs.com">CylonJs</a></li>
+						</ul>
+					</section> -->
+				<section>
+					<h5>
+						<i>...The list is endless, believe me..</i>
+					</h5>
+				</section>
+			</section>
+			<section>
+				<h6>Basic Codes</h6>
+				<section>
+					<pre> Variables - they are containers that you store your value in
+									<code class="data-trim">
+	//declare a variable
+	var myVariable;
+	//assign a value to the variable
+	myVariable = "meetup";
+	//push out the result
+	alert(myVariable);
+									</code>
+								</pre>
+				</section>
+				<section>
+					<pre>
+	Conditionals - they allow you check if an expression returns
+	true or not. 
+									<code class="data-trim">
+	var iceCream = 'chocolate';
+	if (iceCream === 'chocolate') {
+		alert('Yay, I love chocolate ice cream!');    
+	} else {
+		alert('Awwww, but chocolate is my favorite...');    
+	}
+									</code>
+								</pre>
+				</section>
+				<section>
+					<pre>
+		Functions - a way of packaging functionality you wish to use.
+									<code class="data-trim">
+	var myVariable = document.querySelector('h1');
+	alert("Hello, Wolrd");
+	//a simple function to multiply two numbers
+	function multiply(num1, num2) {
+		var result = num1*num2;
+		return result;
+	}
+	//so if you want to use it, you do something like
+	multiply(2, 7);
+									</code>
+								</pre>
+				</section>
+				<section>
+					..and so on :-) <br>
+					Resources
+					<p>https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics</p>
+					<p>http://2ality.com/2013/06/basic-javascript.html</p>
+					<p>https://www.w3schools.com/js/default.asp</p>
+					<p>https://guide.freecodecamp.org/javascript/</p>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			width: 960,
+			height: 700,
+			controls: false,
+			slideNumber: true,
+			//backgroundTransition: 'convex',
+			//parallaxBackgroundImage: '/img/meeting.jpg',
+			//parallaxBackgroundSize: '500px',
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
