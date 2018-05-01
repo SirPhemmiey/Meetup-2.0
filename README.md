@@ -4,5 +4,5 @@
 
 A Presentation for Lokoja Tech Meet up 2.0.
 
-Made with [Reveal.js] (http://revealjs.com/)
+Made with [Reveal.js](http://revealjs.com/)
 
